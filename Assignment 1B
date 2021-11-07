@@ -1,0 +1,46 @@
+package personalAssignment;
+
+import java.util.Scanner;
+
+public class TwoA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double interest,loanamount;
+		int year;
+		
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter yearly interest rate: ");
+		interest = scan.nextDouble();
+		System.out.println("Enter years: ");
+		year = scan.nextInt();
+		System.out.println("Enter loan amount: ");
+		loanamount = scan.nextDouble();
+		
+		double a = interest/100;
+		double montly = loanamount * a;
+		double totalamount = (year*12) * 3.5 /100 * loanamount;
+		
+		System.out.println();
+		System.out.println("The monthly payment is " + montly );
+		System.out.println("The total payment is " + totalamount);
+		
+		
+		
+
+		
+	}
+
+}
+
+OUTPUT
+
+Enter yearly interest rate: 3.5
+Enter years: 
+5
+Enter loan amount: 
+3000
+
+The monthly payment is 105.00000000000001
+The total payment is 6300.0
